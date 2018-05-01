@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Landing Page</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Playfair+Display:900" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div class="logo"><a href="#"><img src="imgs/logo.svg" /></a></div>
+			<nav>
+				<!-- Add vue statement here to get the links dynamically -->
+				<ul>
+					<li><a href="#sign-up">Sign Up</a><span>To receive the latest updates</span></li>
+					<li><a href="#our-process">Our Process</a><span>Answers to your questions</span></li>
+					<li><a href="#gallery">Gallery</a><span>View photos and video</span></li>
+				</ul>
+			</nav>
+			<div class="hamburger">
+				<!--TODO: Add svg hamburger image -->
+				<img src="imgs/hamburger-menu.svg" alt="Menu" />
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="sign-up-cta">
+					<img class="portrait" src="imgs/zachary-thomas.jpg" alt="Image of Zachary Thomas." />
+					<h1>Zachary Thomas</h1>
+					<a href="#sign-up" class="button primary">Sign Up Today</a>
+				</div>
+			</section>
+			<section class="tips">
+				<div class="flex-item video">
+					<img src="imgs/play-button.svg" />
+				</div>
+				<div class="flex-item featured-article">
+					<a href="#generating-leads">12 Handy Tips For Generating Leads Through Cold Calling</a>
+				</div>
+			</section>
+			<section class="company-info clearfix">
+				<div class="row clearfix">
+					<div class="card about">
+						<h2>About</h2>
+						<!-- Possible TYPO HERE! thing=things -->
+						<h3>A few thing to know</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue. Maecenas blandit elementum vulputate. Etiam sollicitudin urna vel est tempus condimentum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue.</p>
+					</div>
+					<div class="card facts">
+						<h2>Facts</h2>
+						<h3>What makes us so good</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue.</p>
+						<ul>
+							<li class="message">Lorem ipsum dolor sit amet vel est</li>
+							<li class="chat">Lorem ipsum vel est tempus urna</li>
+							<li class="message">Lorem ipsum dolor sit amet vel est</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card location">
+						<h2>Location</h2>
+						<h3>We welcome you</h3>
+						<div class="address">
+							<p>8024 Calvin Hall Rd.<br>Indian Land, SC 28277</p>
+							<p>Hours: 8:00AM - 5:00PM</p> 
+						</div>
+						<a href="#get-directions" class="button secondary">Get Directions</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="sign-up">
+			<a name="sign-up"></a>
+			<div class="row clearfix">
+				<div class="focal-block">
+					<p>Sometimes you need to receive these things in your inbox for free!</p>
+				</div>
+				<div class="email-signup-form">
+					<form>
+						<label for="email-input">Sign up to receive the latest updates</label>
+						<input id="email-input" type="email" name="email-input" value="">
+						<button class="button primary">Sign Up</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<nav>
+				<ul>
+					<li></li>
+				</ul>
+			</nav>
+			<p>There are advances being made in science and technology everyday, and a good example of this is the LCD monitor. LCD monitors have several benefits over the old chunky computer monitors that most users are familiar with. Old computers monitors, take up quite a bit of desktop space, put out a ton of heat, drain a ton of energy, and most often have low picture quality and resolution. Modern advances with the LCD computer monitors have change a lot of that. The screen itself is flat, and very then, needing very little desktop space, therefore giving you more room while working at your PC. A big advantage in my opinion is that LCD monitors don't put off all the heat that the old monitors do.</p>
+		</footer>
+		<!-- production version, optimized for size and speed -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

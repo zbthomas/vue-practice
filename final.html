@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Landing Page</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Playfair+Display:900" rel="stylesheet">
+		<link rel="stylesheet" href="css/main-2.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+		<div id="landing-page">
+			<header>
+				<div class="logo"><a href="#"><img src="imgs/logo.svg" /></a></div>
+				<nav>
+					<ul id="nav-menu">
+						<li v-for="item in menuItems">
+							<a :href="item.href">{{item.title}}</a>
+							<span>{{item.subtitle}}</span>
+						</li>
+					</ul>
+				</nav>
+				<div class="hamburger">
+					<img src="imgs/hamburger-menu.svg" alt="Menu" />
+				</div>
+			</header>
+			<main>
+				<section class="hero">
+					<div class="sign-up-cta">
+						<img class="portrait" src="imgs/zachary-thomas.jpg" alt="Image of Zachary Thomas." />
+						<h1>Zachary Thomas</h1>
+						<a href="#sign-up" class="button primary">Sign Up Today</a>
+					</div>
+				</section>
+				<section class="tips">
+					<div class="flex-item video">
+						<img src="imgs/play-button.svg" />
+					</div>
+					<div class="flex-item featured-article">
+						<a href="#generating-leads">12 Handy Tips For Generating Leads Through Cold Calling</a>
+					</div>
+				</section>
+				<section class="company-info clearfix">
+					<div class="row clearfix">
+						<div class="card about" v-for="item in aboutCard">
+							<h2>{{item.title}}</h2>
+							<!-- Possible TYPO HERE! thing=things -->
+							<h3>{{item.subtitle}}</h3>
+							<div v-html="item.content"></div>
+						</div>
+						<div class="card facts" v-for="item in factsCard">
+							<h2>{{item.title}}</h2>
+							<h3>{{item.subtitle}}</h3>
+							<div v-html="item.content"></div>
+							<ul>
+								<li v-for="fact in item.factList" :class="fact.className">{{fact.fact}}</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card location clearfix">
+							<div class="location-info">
+								<h2>Location</h2>
+								<h3>We welcome you</h3>
+								<div class="address">
+									<!-- Wrong Zip code?? -->
+									<p v-html="address"></p>
+									<p v-text="hours"></p> 
+								</div>
+								<a href="#get-directions" class="button secondary">Get Directions</a>
+							</div>
+							<div id="map"></div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<section class="sign-up">
+				<a name="sign-up"></a>
+				<div class="focal-block">
+					<p>Sometimes you need to receive these things in your inbox for free!</p>
+				</div>
+				<div class="email-signup-form">
+					<form>
+						<div class="email-label">
+							<label for="email-input">Sign up to receive the latest updates</label>
+						</div>
+						<input id="email-input" type="email" name="email-input" value="" placeholder="Email Address">
+						<button class="button primary">Sign Up</button>
+					</form>
+				</div>
+			</section>
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="#" class="logo"><img src="imgs/logo-white.svg" /></a></li>
+						<li v-for="item in menuItems">
+							<a :href="item.href">{{item.title}}</a>
+							<span>{{item.subtitle}}</span>
+						</li>
+					</ul>
+				</nav>
+				<p>There are advances being made in science and technology everyday, and a good example of this is the LCD monitor. LCD monitors have several benefits over the old chunky computer monitors that most users are familiar with. Old computers monitors, take up quite a bit of desktop space, put out a ton of heat, drain a ton of energy, and most often have low picture quality and resolution. Modern advances with the LCD computer monitors have change a lot of that. The screen itself is flat, and very then, needing very little desktop space, therefore giving you more room while working at your PC. A big advantage in my opinion is that LCD monitors don't put off all the heat that the old monitors do.</p>
+			</footer>
+		</div>
+	</body>
+		<!-- development version, learning vue.js with this -->
+		<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbAi2vKeJScax58EASlUFGWU5ZJdBkPnw&callback=initMap" async defer></script>
+		<script src="js/app-2.js"></script>
+</html>
