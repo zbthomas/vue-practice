@@ -128,7 +128,7 @@ h1 {
 }
 .company-info {
 	background-color: transparent;
-	padding: 4rem 3rem 4rem 10rem;
+	padding: 4rem 6.5rem;
 	border: 1px solid #979797;
 	@media(max-width: #{phone}){
 		flex-flow: column;
@@ -149,7 +149,7 @@ h1 {
 			margin-right: 2rem;
 		}
 		&.facts {
-			width: 57%;
+			width: 60%;
 		}
 		&.facts ul li {
 			padding: 1rem 0 2rem 8rem;

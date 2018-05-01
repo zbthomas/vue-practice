@@ -152,7 +152,7 @@ h1 {
 
 .company-info {
   background-color: transparent;
-  padding: 4rem 3rem 4rem 10rem;
+  padding: 4rem 6.5rem;
   border: 1px solid #979797; }
   @media (max-width: phone) {
     .company-info {
@@ -171,7 +171,7 @@ h1 {
       width: 24%;
       margin-right: 2rem; }
     .company-info .card.facts {
-      width: 57%; }
+      width: 60%; }
     .company-info .card.facts ul li {
       padding: 1rem 0 2rem 8rem;
       margin-bottom: 1.94rem;
